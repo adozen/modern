@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server",
-    "test": "nyc ava --verbose"
+    "test": "nyc ava --verbose",
+    "cover": "nyc report --reporter=text-lcov | coveralls"
   },
   "ava": {
     "babel": "inherit",
