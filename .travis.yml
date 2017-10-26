@@ -5,8 +5,8 @@ branches:
   only:
   - master
 install:
-- yarn
+- npm install
 script:
-- yarn run test
+- npm test
 after_success:
-- yarn run cover
+- npm run cover
